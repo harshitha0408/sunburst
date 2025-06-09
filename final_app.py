@@ -11,8 +11,8 @@ st.title("AI Program Structure - Interactive Sunburst Chart")
 @st.cache_data
 def load_and_process_data():
     # Load your CSV files - update these paths to match your server file locations
-    ai_df = pd.read_csv("C:\\Users\\HP\\Desktop\\INTERN@SWECHA\\aieLeads.csv")  # Make sure this file is in your Streamlit app directory
-    tech_df = pd.read_csv("C:\\Users\\HP\\Desktop\\INTERN@SWECHA\\TechLeads.csv")  # Make sure this file is in your Streamlit app directory
+    ai_df = pd.read_csv("aieLeads.csv")  # Make sure this file is in your Streamlit app directory
+    tech_df = pd.read_csv("TechLeads.csv")  # Make sure this file is in your Streamlit app directory
     
     # Tag each level
     ai_df["Level"] = "AI Intern"
